@@ -9,4 +9,4 @@ The program allows the user to vote for an animal of his/her choice. The program
 This project is done by Vincent Chisaka.
 
 # License 
-MIT-License
+MIT-Licensed

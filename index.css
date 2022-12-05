@@ -1,0 +1,14 @@
+body {
+    margin: o auto;
+    width: 100%;
+    background-color: rgb(107, 151, 122);
+    text-align: center;
+    padding: 40px;
+}
+#main {
+    width: 50vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
