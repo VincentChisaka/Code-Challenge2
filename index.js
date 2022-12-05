@@ -156,50 +156,50 @@ function namesList() {
     });
 }
 
-// //change variable 
-// function animalsContainer(id) {
-//   //change variable animalsPromise
-//   const promise = fetch(API);
-//   promise
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .then((data) => {
-//       console.log(data + "john");
-//       const animal = data[id - 1];
-//       const animalssItem = createAnimalItem(
-//         animal.image,
-//         animal.name,
-//         animal.votes,
-//         animal.id
-//       );
-//       appendElement(animalssItem, "block");
-//       console.log(animal.id);
+//change variable 
+function animalsContainer(id) {
+  //change variable animalsPromise
+  const promise = fetch(API);
+  promise
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      console.log(data + "john");
+      const animal = data[id - 1];
+      const animalssItem = createAnimalItem(
+        animal.image,
+        animal.name,
+        animal.votes,
+        animal.id
+      );
+      appendElement(animalssItem, "block");
+      console.log(animal.id);
 
-//       //}
-//     });
-// }
+      //}
+    });
+}
 
-// function count(id){
+function count(id){
 
-//     let count = fetch(API)
-//     count.then((res)=>{
-//         return res.json()
-//     }).then((data)=>{
-//         let votes = data[id-1]
-//         let votesDataBase = votesItem(votes.id, votes.name, votes.image, votes.votes,)
-//         appendElement(votesDataBase, "block");
+    let count = fetch(API)
+    count.then((res)=>{
+        return res.json()
+    }).then((data)=>{
+        let votes = data[id-1]
+        let votesDataBase = votesItem(votes.id, votes.name, votes.image, votes.votes,)
+        appendElement(votesDataBase, "block");
         
 
 
-//         console.log(votesDataBase)
-//     })
+        console.log(votesDataBase)
+    })
 
-// }
+}
 
-// document.addEventListener("DOMContentLoaded", (event) => {
-//   print(`Event loaded: ${event.type}`);
+document.addEventListener("DOMContentLoaded", (event) => {
+  print(`Event loaded: ${event.type}`);
 
 
-//   print(namesList());
-// });
+  print(namesList());
+});
