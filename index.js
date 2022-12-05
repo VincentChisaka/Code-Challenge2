@@ -55,27 +55,27 @@ function votesItem(id, name, image, votes) {
         console.log(valueOfVotes)
         voting.innerHTML = ++valueOfVotes
         
-//        // }
-//         //let options = {
-//           //  method: "PATCH",
-//             //characters:JSON.stringify(payload),
-//         //}
-//         fetch(`http://localhost:3000/characters/${id}`,{
-//           method: "PATCH",
+       // }
+        //let options = {
+          //  method: "PATCH",
+            //characters:JSON.stringify(payload),
+        //}
+        fetch(`http://localhost:3000/characters/${id}`,{
+          method: "PATCH",
 
-//           body:JSON.stringify({
-//             votes: `${valueOfVotes}`,            
+          body:JSON.stringify({
+            votes: `${valueOfVotes}`,            
 
-//           }),
-//           headers: {
-//             'Content-type': 'application/json; charset=UTF-8',
-//           },
+          }),
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+          },
           
           
         
-//         })
-//         .then((response) => response.json())
-//         .then((json)=>console.log(json))
+        })
+        .then((response) => response.json())
+        .then((json)=>console.log(json))
 
 
 
@@ -83,78 +83,78 @@ function votesItem(id, name, image, votes) {
         
 
         
-//         console.log(votes)
-//         return votes
+        console.log(votes)
+        return votes
         
 
         
         
         
     
-//       //votesCount(voteHere.getAttribute("id"))
+      //votesCount(voteHere.getAttribute("id"))
       
-//     })
-//     voteClick.setAttribute("id","voteClick")
-//     voteClick.style.color = "red"
-//     voteClick.innerHTML = "vote";
+    })
+    voteClick.setAttribute("id","voteClick")
+    voteClick.style.color = "red"
+    voteClick.innerHTML = "vote";
   
   
   
-//     let votesDiv = document.createElement("p");
-//     votesDiv.setAttribute("id","tally")
-//     votesDiv.innerHTML = votes;
+    let votesDiv = document.createElement("p");
+    votesDiv.setAttribute("id","tally")
+    votesDiv.innerHTML = votes;
 
-//     let voteString = document.createElement('p')
-//     voteString.innerHTML = "votes"
-
-
+    let voteString = document.createElement('p')
+    voteString.innerHTML = "votes"
 
 
 
-//     rootDiv.append(voteClick)
-//     rootDiv.append(votesDiv);
-//     rootDiv.append(voteString)
+
+
+    rootDiv.append(voteClick)
+    rootDiv.append(votesDiv);
+    rootDiv.append(voteString)
   
-//     return rootDiv;
-// }
+    return rootDiv;
+}
 
-// // append item to an element
-// function appendElement(element, id = "animal-item-body") {
-//   const rootElement = document.getElementById(id);
-//   rootElement.append(element);
-// }
+// append item to an element
+function appendElement(element, id = "animal-item-body") {
+  const rootElement = document.getElementById(id);
+  rootElement.append(element);
+}
 
-// //chmge variable 
-// const API = "http://localhost:3000/characters";
+//chmge variable 
+const API = "http://localhost:3000/characters";
 
-// //chmge variable 
-// function namesList() {
-//   const name = fetch(API);
-//   name
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .then((names) => {
-//       //chmge variable 
-//       let listNames = names;
+//chmge variable 
+function namesList() {
+  const name = fetch(API);
+  name
+    .then((res) => {
+      return res.json();
+    })
+    .then((names) => {
+      //chmge variable 
+      let listNames = names;
 
-//       for (let i = 0; i < listNames.length; i++) {
-//         //chmge variable item n nameitem
-//         const nOfAnimal = listNames[i];
-//         const nOfItem = nameItem(nOfAnimal.name, nOfAnimal.id);
+      for (let i = 0; i < listNames.length; i++) {
+        //chmge variable item n nameitem
+        const nOfAnimal = listNames[i];
+        const nOfItem = nameItem(nOfAnimal.name, nOfAnimal.id);
 
-//         appendElement(nOfItem, "display");
+        appendElement(nOfItem, "display");
 
 
-//         nOfItem.addEventListener("click", (id) => {
+        nOfItem.addEventListener("click", (id) => {
             
-//           animalsContainer(nOfItem.getAttribute("id"));
-//           count(nOfItem.getAttribute("id"))
-//           document.querySelector("ol").remove()                                                                                                                                                                                                                                                                         
-//         });
-//       }
-//     });
-// }
+          animalsContainer(nOfItem.getAttribute("id"));
+          count(nOfItem.getAttribute("id"))
+          document.querySelector("ol").remove()                                                                                                                                                                                                                                                                         
+        });
+      }
+    });
+}
 
 // //change variable 
 // function animalsContainer(id) {
